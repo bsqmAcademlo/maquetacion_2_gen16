@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Light-Grayish-Magenta);
+}
+
+.container {
+    background-color: #fff;
+    max-width: 1000px;
+    padding: 1em;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1__info {
+    width: 40%;
+}
+
+.section1__info p:nth-child(1) {
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 1em;
+}
+
+.section1__info p:nth-child(2) {
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 2em;
+}
+
+.section__rated {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50%;
+
+    gap: 1em;
+}
+
+.section__rated-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+    background-color: var(--Light-Grayish-Magenta);
+}
+
+svg:hover {
+    fill: #cecece;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.section__rated-item p {
+    color: var(--Very-Dark-Magenta);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.section__rated-item:nth-child(1) {
+    align-self: flex-start;
+}
+
+.section__rated-item:nth-child(2) {
+    align-self: center;
+}
+
+.section__rated-item:nth-child(3) {
+    align-self: flex-end;
+}
+
+.section2 {
+    display: flex;
+    gap: 1em;
+    height: 300px;
+}
+
+.card {
+    background-color: var(--Very-Dark-Magenta);
+    color: #fff;
+    padding: 1em;
+    border-radius: 1em;
+    height: 80%;
+}
+
+.card:nth-child(1) {
+    align-self: flex-start;
+}
+
+.card:nth-child(2) {
+    align-self: center;
+}
+
+.card:nth-child(3) {
+    align-self: flex-end;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.card__header-img {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.card__header-img img {
+    width: 100%;
+}
+
+.card__body p {
+    font-weight: 500;
+}
